@@ -1,0 +1,42 @@
+2013/08/24 11:21:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'style_php.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `User`.
+in /Library/WebServer/Documents/default/index.php (13)
+2013/08/24 11:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in /Library/WebServer/Documents/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#1 /Library/WebServer/Documents/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/default/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/default/index.php?r=users
+---
+2013/08/24 11:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signin".' in /Library/WebServer/Documents/framework/web/CController.php:483
+Stack trace:
+#0 /Library/WebServer/Documents/framework/web/CController.php(270): CController->missingAction('signin')
+#1 /Library/WebServer/Documents/framework/web/CWebApplication.php(282): CController->run('signin')
+#2 /Library/WebServer/Documents/framework/web/CWebApplication.php(141): CWebApplication->runController('user/signin')
+#3 /Library/WebServer/Documents/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/default/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/index.php?r=user/signin
+HTTP_REFERER=http://localhost/default/index.php?r=user
+---
+2013/08/24 11:25:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signin".' in /Library/WebServer/Documents/framework/web/CController.php:483
+Stack trace:
+#0 /Library/WebServer/Documents/framework/web/CController.php(270): CController->missingAction('signin')
+#1 /Library/WebServer/Documents/framework/web/CWebApplication.php(282): CController->run('signin')
+#2 /Library/WebServer/Documents/framework/web/CWebApplication.php(141): CWebApplication->runController('user/signin')
+#3 /Library/WebServer/Documents/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/default/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/index.php?r=user/signin
+---
+2013/08/24 11:26:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signin".' in /Library/WebServer/Documents/framework/web/CController.php:483
+Stack trace:
+#0 /Library/WebServer/Documents/framework/web/CController.php(270): CController->missingAction('signin')
+#1 /Library/WebServer/Documents/framework/web/CWebApplication.php(282): CController->run('signin')
+#2 /Library/WebServer/Documents/framework/web/CWebApplication.php(141): CWebApplication->runController('user/signin')
+#3 /Library/WebServer/Documents/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/default/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/default/index.php?r=user/signin
+HTTP_REFERER=http://localhost/default/index.php?r=user/create
+---
